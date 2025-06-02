@@ -1,5 +1,5 @@
 # Olá, eu sou o Luís Fernando
 Sobre mim:
-- Instituição de ensino: Universidade Tecnológica Federal do Paraná
-- Curso: Engenharia de Software
-- Cidade: Cornélio Procópio, Paraná, Brasil
+- 🏬 Universidade Tecnológica Federal do Paraná
+- 💻 Engenharia de Software
+- 📍 Cornélio Procópio, Paraná, Brasil
