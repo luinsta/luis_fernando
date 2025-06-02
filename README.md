@@ -1,5 +1,15 @@
 # Olá, eu sou o Luís Fernando
 Sobre mim:
-- 🏬 Universidade Tecnológica Federal do Paraná
-- 💻 Engenharia de Software
-- 📍 Cornélio Procópio, Paraná, Brasil
+<img src="victor.jpg" alt="Imagem de perfil" width="250"/>
+
+* 📍 **Localização:** Cornélio Procópio, Paraná, Brasil
+* 🏫 **Instituição de Ensino:** Universidade Tecnológica Federeal do Paraná - UTFPR.
+* 👨‍💻 **Curso:** Engenharia de Software.
+* 🗓️ **Semestre Atual:** 6º semestre.
+* 💼 **Experiência:** Desenvolvedor front-end, 2 anos.
+* 💡 **Conhecimentos:** WordPress · TypeScript · JavaScript · HTML · CSS · PHP · MySQL · MariaDB · Bootstrap · Web Design Responsivo · SEO · UX/UI.
+* 🚴 **Hobbies:** Academia.
+
+## Sprints
+
+* [Sprint 1](sprint-1/desafio-sprint)
