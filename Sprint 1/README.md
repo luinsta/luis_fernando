@@ -26,8 +26,6 @@ Foram criadas as seguintes tabelas:
 - Vendedor
 - Locacao
 
-📜 Script SQL: modelo_normalizado.sql
-
 ## 📊 Etapa 3: Criação do Modelo Dimensional
 Para análise de dados (BI), criamos um modelo baseado em Esquema Estrela, com foco em desempenho para consultas agregadas. Definimos uma fato central (FatoLocacao) e tabelas de dimensão:
 - DimCliente
@@ -36,18 +34,11 @@ Para análise de dados (BI), criamos um modelo baseado em Esquema Estrela, com f
 - DimVendedor
 - DimTempo
 
-📜 Script SQL: modelo_dimensional.sql
-
 ## 🗺️ Etapa 4: Representação Visual
 Utilizamos o padrão PlantUML para desenhar os diagramas das estruturas criadas:
 
 - Diagrama Entidade-Relacionamento do modelo normalizado
 - Diagrama Estrela representando o modelo dimensional
-
-📎 Acessíveis em:
-
-- diagrama-modelo-relacional-normalizado.png
-- diagrama-modelo-dimensional.png
 
 ⚙️ Tecnologias e Ferramentas Utilizadas
 - SQLite: Análise preliminar da base original
