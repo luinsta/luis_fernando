@@ -1,0 +1,46 @@
+@startuml
+
+entity PESSOA {
+  +cod_pessoa : INTEGER
+  nome_completo : TEXT
+  telefone : TEXT
+  identificador : TEXT
+  endereco_residencial : TEXT
+}
+
+entity VEICULO {
+  +cod_veiculo : INTEGER
+  placa : TEXT
+  modelo : TEXT
+  marca : TEXT
+  cor : TEXT
+  ano_fabricacao : INTEGER
+  valor_mercado : REAL
+}
+
+entity COLABORADOR {
+  +cod_colaborador : INTEGER
+  nome : TEXT
+  funcao : TEXT
+  telefone : TEXT
+}
+
+entity PEDIDO {
+  +cod_pedido : INTEGER
+  cliente_id : INTEGER
+  vendedor_id : INTEGER
+  total : REAL
+  data_transacao : DATE
+}
+
+entity DETALHE_PEDIDO {
+  +cod_pedido : INTEGER
+  +cod_veiculo : INTEGER
+}
+
+PESSOA ||--o{ PEDIDO : fez
+COLABORADOR ||--o{ PEDIDO : processou
+PEDIDO ||--o{ DETALHE_PEDIDO : inclui
+VEICULO ||--o{ DETALHE_PEDIDO : adquirido
+
+@enduml
