@@ -1,14 +1,14 @@
 # Olá, eu sou o Luís Fernando
-Sobre mim:
+##Sobre mim:
 <img src="victor.jpg" alt="Imagem de perfil" width="250"/>
 
 * 📍 **Localização:** Cornélio Procópio, Paraná, Brasil
 * 🏫 **Instituição de Ensino:** Universidade Tecnológica Federeal do Paraná - UTFPR.
 * 👨‍💻 **Curso:** Engenharia de Software.
-* 🗓️ **Semestre Atual:** 6º semestre.
-* 💼 **Experiência:** Desenvolvedor front-end, 2 anos.
-* 💡 **Conhecimentos:** WordPress · TypeScript · JavaScript · HTML · CSS · PHP · MySQL · MariaDB · Bootstrap · Web Design Responsivo · SEO · UX/UI.
-* 🚴 **Hobbies:** Academia.
+* 🗓️ **Semestre Atual:** 3º semestre.
+* 💼 **Experiência:** Nenhuma na área.
+* 💡 **Conhecimentos:** JavaScript · HTML · CSS · PHP · MySQL · C · C# · Front-end · UX/UI.
+* 🚴 **Hobbies:** Vôlei, Tênis, Academia.
 
 ## Sprints
 
