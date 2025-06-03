@@ -1,0 +1,51 @@
+@startuml
+
+entity FATO_TRANSACAO {
+  +cod_venda : INTEGER
+  ref_tempo : INTEGER
+  ref_cliente : INTEGER
+  ref_funcionario : INTEGER
+  ref_veiculo : INTEGER
+  total_venda : REAL
+}
+
+entity CLIENTE {
+  +cod_cliente : INTEGER
+  cpf : TEXT
+  nome_completo : TEXT
+  endereco_residencial : TEXT
+  contato : TEXT
+}
+
+entity VEICULO {
+  +cod_veiculo : INTEGER
+  placa : TEXT
+  modelo : TEXT
+  marca : TEXT
+  cor : TEXT
+  ano_modelo : INTEGER
+  preco_base : REAL
+}
+
+entity FUNCIONARIO {
+  +cod_funcionario : INTEGER
+  nome : TEXT
+  funcao : TEXT
+  telefone : TEXT
+}
+
+entity CALENDARIO {
+  +cod_tempo : INTEGER
+  data_completa : DATE
+  dia_mes : INTEGER
+  mes_corrente : INTEGER
+  ano_corrente : INTEGER
+  dia_semana : TEXT
+}
+
+FATO_TRANSACAO }o--|| CLIENTE : referencia_cliente
+FATO_TRANSACAO }o--|| FUNCIONARIO : referencia_funcionario
+FATO_TRANSACAO }o--|| VEICULO : referencia_veiculo
+FATO_TRANSACAO }o--|| CALENDARIO : referencia_tempo
+
+@enduml
