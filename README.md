@@ -1,6 +1,6 @@
 # Olá, eu sou o Luís Fernando
 ## Sobre mim:
-![luis.jpg](downloads_luis.jpg)
+<img src="luis.jpg" alt="Imagem de perfil" width="250"/>
 
 * 📍 **Localização:** Cornélio Procópio, Paraná, Brasil
 * 🏫 **Instituição de Ensino:** Universidade Tecnológica Federeal do Paraná - UTFPR.
