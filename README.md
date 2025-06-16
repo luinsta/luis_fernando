@@ -1,4 +1,7 @@
 # Olá, eu sou o Luís Fernando
+
+<img src="luis.jpg" alt="Imagem de perfil" width="250"/>
+
 ## Sobre mim:
 
 * 📍 **Localização:** Cornélio Procópio, Paraná, Brasil
