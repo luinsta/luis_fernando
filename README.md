@@ -10,6 +10,6 @@
 * 🚴 **Hobbies:** Vôlei, Tênis, Academia.
 
 ## Sprints
-[Sprint 1](Sprint 1/)
+[Sprint 1](Sprint-1/)
 
 [Sprint 2](sprint-2/)
