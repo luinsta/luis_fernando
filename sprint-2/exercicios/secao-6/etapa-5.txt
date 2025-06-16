@@ -1,0 +1,39 @@
+def parse_csv_line(line):
+    valores = []
+    atual = ''
+    dentro_de_aspas = False
+    for c in line:
+        if c == '"':
+            dentro_de_aspas = not dentro_de_aspas
+        elif c == ',' and not dentro_de_aspas:
+            valores.append(atual.strip())
+            atual = ''
+        else:
+            atual += c
+    valores.append(atual.strip())
+    return valores
+
+with open('actors.csv', encoding='utf-8') as f:
+    linhas = f.readlines()
+
+cabecalho = parse_csv_line(linhas[0])
+dados = [parse_csv_line(linha) for linha in linhas[1:]]
+
+idx_nome = cabecalho.index("Actor")
+idx_total = cabecalho.index("Total Gross")
+
+atores = []
+for linha in dados:
+    nome = linha[idx_nome]
+    total = linha[idx_total].replace(",", "").strip()
+    try:
+        total_valor = float(total)
+        atores.append((nome, total_valor))
+    except ValueError:
+        continue
+
+ordenado = sorted(atores, key=lambda x: -x[1])
+
+with open("etapa-5.txt", "w", encoding="utf-8") as f_out:
+    for nome, total in ordenado:
+        f_out.write(f"{nome} - {total:.2f}\n")

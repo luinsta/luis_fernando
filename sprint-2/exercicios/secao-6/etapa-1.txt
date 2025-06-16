@@ -1,0 +1,38 @@
+def parse_csv_line(line):
+    valores = []
+    atual = ''
+    dentro_de_aspas = False
+
+    for c in line:
+        if c == '"':
+            dentro_de_aspas = not dentro_de_aspas
+        elif c == ',' and not dentro_de_aspas:
+            valores.append(atual.strip())
+            atual = ''
+        else:
+            atual += c
+    valores.append(atual.strip()) 
+    return valores
+
+with open('actors.csv', encoding='utf-8') as f:
+    linhas = f.readlines()
+
+cabecalho = parse_csv_line(linhas[0])
+dados = [parse_csv_line(linha) for linha in linhas[1:]]
+
+idx_nome = cabecalho.index("Actor")
+idx_num_filmes = cabecalho.index("Number of Movies")
+
+maior = ("", 0)
+for linha in dados:
+    try:
+        num_filmes = int(linha[idx_num_filmes])
+        if num_filmes > maior[1]:
+            maior = (linha[idx_nome], num_filmes)
+    except ValueError:
+        continue  
+
+resultado = f"O ator/atriz com maior número de filmes é {maior[0]}, com {maior[1]} filmes."
+
+with open("etapa-1.txt", "w", encoding="utf-8") as f_out:
+    f_out.write(resultado)
