@@ -65,4 +65,4 @@ Este desafio foi crucial para solidificar a lógica de programação e entender 
 ---
 
 ## 🎉 Conclusão: Missão Cumprida!
-Esta sprint foi uma verdadeira "montanha-russa" de aprendizado! Saio dela muito mais confiante para enfrentar problemas de dados, seja com as ferramentas mais avançadas ou com o bom e velho Python puro. Próxima estação: novos desafios!
+Esta sprint foi uma verdadeira "montanha-russa" de aprendizado! Saio dela muito mais confiante para enfrentar problemas de dados, seja com as ferramentas mais avançadas ou com o bom e velho Python puro. Que venha a próxima Sprint!
